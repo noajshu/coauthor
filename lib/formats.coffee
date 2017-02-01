@@ -331,6 +331,11 @@ formatEither = (isTitle, format, text, leaveTeX = false) ->
       """<img src="#{urlToFile file}">"""
     when 'video'
       """<video controls><source src="#{urlToFile file}" type="#{file.contentType}"></video>"""
+    when 'pdf'
+      """<div class="pdf">
+           <object class="pdf" data="#{urlToFile file}" type="application/pdf" width="800" height="400">#{formatFileDescription file}</object><span class="glyphicon glyphicon-resize-full"></span>
+         </div>
+      """
     else  ## 'unknown'
       formatFileDescription file
 

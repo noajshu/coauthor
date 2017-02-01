@@ -30,6 +30,8 @@ fileUrlPrefix = "#{Files.baseURL}/id/"
     'image'
   else if file.contentType in ['video/mp4', 'video/ogg', 'video/webm']
     'video'
+  else if file.contentType == 'application/pdf'
+    'pdf'
   else
     'unknown'
 
