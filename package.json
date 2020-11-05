@@ -36,7 +36,7 @@
     "jquery": "^3.4.1",
     "js-cookie": "^2.2.1",
     "jszip": "^3.2.2",
-    "git+https://github.com/ronkok/KaTeX.git": "^0.12.0",
+    "katex": "git+https://github.com/ronkok/KaTeX.git",
     "markdown-it": "^11.0.0",
     "markdown-it-replacements": "^1.0.1",
     "markdown-it-task-checkbox": "^1.0.6",
